@@ -346,8 +346,102 @@ body {
     color: #777777;
 }
 
+.materials-links {
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #252525;
+}
 
+.materials-heading {
+    margin-bottom: 30px;
+}
 
+.materials-label {
+    display: block;
+    font-size: 8px;
+    letter-spacing: 1px;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.materials-heading h2 {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.materials-heading p {
+    font-size: 9px;
+    line-height: 1.6;
+    color: #777;
+    max-width: 400px;
+}
+
+.materials-accordion {
+    width: 100%;
+}
+
+.material-item {
+    border: 1px solid #dedede;
+    margin-bottom: 5px;
+}
+
+.material-item summary {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 13px 12px;
+    font-size: 9px;
+    letter-spacing: 0.2px;
+}
+
+.material-number {
+    color: #999;
+    font-size: 9px;
+}
+
+.material-arrow {
+    margin-left: auto;
+    font-size: 15px;
+    font-weight: 300;
+    color: #777;
+    transition: transform 0.3 ease;
+}
+
+.material-item[open] .material-arrow {
+    transform:rotate(45deg);
+}
+
+.material-content {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 22px;
+    padding: 8px 18px 20px;
+    align-items: center;
+}
+
+.material-img {
+    width: 100px;
+    height: 115px;
+    object-fit: cover;
+}
+
+.matirial-text h3 {
+    font-size: 10px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.matirial-text p {
+    font-size: 9px;
+    line-height: 1.7;
+    color: #777;
+    max-width: 10px;
+}
 
 
 /*WHO ARE WE? /ABOUT*/
