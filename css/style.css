@@ -15,10 +15,10 @@ body {
 /*HEADER*/
 
 .header {
-    position: absolute;
+    position: fixed;
     z-index: 9999;
     top: 40px;
-    left: 50px;
+    left: 40px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
