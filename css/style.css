@@ -679,16 +679,16 @@ body {
 
 .artists-container {
     display: flex;
-    gap: 28px;
+    gap: 35px;
     margin-right: 0;
 }
 
 
 .artist-card {
-    width: 270px;
-    min-height: 580px;
+    width: 320px;
+    min-height: 680px;
     border: 1px solid #999999;
-    padding: 20px 22px;
+    padding: 25px 28px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -698,15 +698,15 @@ body {
 
 .artist-star {
     align-self: flex-start;
-    font-size: 18px;
+    font-size: 23px;
     color: #111111;
 }
 
 
 .artist-image {
-    width: 190px;
-    height: 260px;
-    margin-top: 65px;
+    width: 220px;
+    height: 290px;
+    margin-top: 55px;
 }
 
 .artist-image img {
@@ -719,35 +719,37 @@ body {
 .artist-name {
     width: 100%;
     text-align: right;
-    font-size: 11px;
-    font-weight: 400;
-    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 15px;
 }
 
 
 
 .artist-info {
     width: 100%;
-    margin-top: 25px;
+    margin-top: 30px;
 }
 
 .artist-info p {
-    font-size: 11px;
+    font-size: 15px;
+    font-weight: 300;
     color: #555555;
-    margin-bottom: 18px;
-    line-height: 1.5;
+    margin-bottom: 22px;
+    line-height: 1.6;
 }
 
 
 .artist-quote {
-    font-size: 11px;
+    font-size: 15px;
+    font-weight: 300;
     font-family: serif;
     font-style: italic;
     color: #777777;
     text-align: right;
     line-height: 1.7;
     margin-top: auto;
-    margin-bottom: 22px;
+    margin-bottom: 25px;
 }
 
 /*SECTION STORY*/
@@ -880,6 +882,271 @@ body {
     color:#999999;
     white-space: nowrap;
 }
+
+
+/* BOOKING REQUEST */ 
+
+.booking-section {
+    width: 100%;
+    padding: 60px 0;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+/* MAIN CONTAINER */
+
+.booking-container {
+    width: 80%;
+    max-width: 1180px;
+    margin: 0 auto;
+    border: 1px solid #777777;
+    padding: 50px 60px;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+
+.booking-header {
+    margin-bottom: 65px;
+}
+
+.booking-label {
+    font-size: 14px;
+    font-weight: 400;
+    color: #777777;
+    margin: 0 0 25px 0;
+}
+
+.booking-header h2 {
+    font-size: 30px;
+    font-weight: 400;
+    color: #111111;
+    margin: 0 0 12px 0;
+}
+
+.booking-description {
+    font-size: 17px;
+    font-weight: 300;
+    color: #333333;
+    margin: 0;
+}
+
+
+/* FORM LAYOUT */
+
+.booking-form {
+    width: 100%;
+}
+
+.booking-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12%;
+    margin-bottom: 45px;
+}
+
+
+/* INPUT FIELDS */
+
+.booking-field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.booking-field > label,
+.booking-artist > label {
+    font-size: 16px;
+    font-weight: 400;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.booking-field input,
+.booking-field select {
+    width: 100%;
+    height: 56px;
+    padding: 0 23px;
+    border: 1px solid #777777;
+    border-radius: 0;
+    background-color: #ffffff;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 300;
+    color: #333333;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.booking-field input::placeholder {
+    color: #888888;
+}
+
+.booking-field input:focus,
+.booking-field select:focus {
+    border-color: #111111;
+}
+
+
+/* ARTIST OPTIONS */
+
+.booking-artist {
+    margin-bottom: 55px;
+}
+
+.artist-options {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    margin-top: 17px;
+}
+
+.artist-option {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #888888;
+    cursor: pointer;
+}
+
+.artist-option input {
+    width: 17px;
+    height: 17px;
+    margin: 0;
+    accent-color: #111111;
+    cursor: pointer;
+}
+
+
+/* BOTTOM FIELDS */
+
+.booking-bottom {
+    margin-bottom: 60px;
+}
+
+.booking-field select {
+    cursor: pointer;
+}
+
+.booking-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.booking-button button {
+    width: 165px;
+    height: 56px;
+    border: none;
+    border-radius: 0;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.booking-button button:hover {
+    background-color: #444444;
+}
+
+
+
+/* ============================= */
+/* GOOD TO KNOW */
+/* ============================= */
+
+.goodtoknow-section {
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px 8%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 10%;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+
+/* LEFT IMAGE */
+
+.goodtoknow-image {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.goodtoknow-image img {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+
+/* RIGHT CONTENT */
+
+.goodtoknow-content {
+    width: 100%;
+    max-width: 510px;
+}
+
+
+/* HEADER */
+
+.goodtoknow-header {
+    margin-bottom: 65px;
+}
+
+.goodtoknow-label {
+    font-size: 14px;
+    font-weight: 400;
+    color: #777777;
+    margin: 0 0 24px 0;
+}
+
+.goodtoknow-header h2 {
+    font-size: 30px;
+    font-weight: 400;
+    color: #111111;
+    margin: 0;
+}
+
+
+/* QUESTIONS */
+
+.goodtoknow-item {
+    margin-bottom: 48px;
+}
+
+.goodtoknow-item:last-child {
+    margin-bottom: 0;
+}
+
+.goodtoknow-item h3 {
+    font-size: 21px;
+    font-weight: 400;
+    color: #111111;
+    margin: 0 0 12px 0;
+}
+
+.goodtoknow-item p {
+    font-size: 16px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1.35;
+    color: #444444;
+    margin: 0;
+}
+
+
 
 
 /* FOOTER */
