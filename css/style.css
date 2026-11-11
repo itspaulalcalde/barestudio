@@ -264,13 +264,73 @@ body {
 /*Foto 5*/
 .home-work > div:nth-child(5) {
     grid-column: 1;
-    grid-row: 3;
+    grid-row: 5;
     justify-self: start;
 }
 
 .home-work > div:nth-child(5) img {
     width: 220px;
 }
+
+/*Foto 6*/
+.home-work > div:nth-child(6) {
+    grid-column: 2;
+    grid-row: 6;
+    justify-self: start;
+}
+
+.home-work > div:nth-child(6) img {
+    width: 220px;
+}
+
+/*Foto 7*/
+.home-work > div:nth-child(7) {
+    grid-column: 1;
+    grid-row: 7;
+    justify-self: center;
+    margin-top: 343px;
+}
+
+.home-work > div:nth-child(7) img {
+    width: 300px;
+}
+
+/*Foto 8*/
+.home-work > div:nth-child(8) {
+    grid-column: 2;
+    grid-row: 8;
+    justify-self: start;
+}
+
+.home-work > div:nth-child(8) img {
+    width: 220px;
+}
+
+/*Foto 9*/
+.home-work > div:nth-child(9) {
+    grid-column: 1;
+    grid-row: 9;
+    justify-self: center;
+    margin-top: 300px;
+}
+
+.home-work > div:nth-child(9) img {
+    width: 220px;
+}
+
+/*Foto 10*/
+.home-work > div:nth-child(10) {
+    grid-column: 2;
+    grid-row: 10;
+    justify-self: start;
+}
+
+.home-work > div:nth-child(10) img {
+    width: 220px;
+}
+
+
+
 
 
 .home-work img {
@@ -592,6 +652,7 @@ body {
 }
 
 
+
 /*WHO ARE WE? /ABOUT*/
 
 
@@ -750,6 +811,73 @@ body {
     font-style: italic;
     margin-top: 25px;
     color: #777777;
+}
+
+/*OUR PHILOSOPHY*/
+
+.philosophy-section {
+    min-height: 100vh;
+    width: 100%;
+    padding: 100px 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+.philosophy-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.philosophy-subtitle {
+    font-size: 11px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.philosophy-header h2 {
+    font-size: 28px;
+    font-weight: 400;
+    color: #111111;
+    margin: 0;
+}
+
+.philosophy-grid {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.15fr 1fr 1.55fr;
+    gap: 20px;
+}
+
+.philosophy-card {
+    border: 1px solid #777777;
+    padding: 28px 38px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 118px;
+    box-sizing: border-box;
+}
+
+.philosophy-card h3 {
+    font-size: 21px;
+    font-weight: 400;
+    color: #111111;
+    margin: 0 0 8px 0;
+    white-space: nowrap;
+}
+
+.philosophy-card p {
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+    color:#999999;
+    white-space: nowrap;
 }
 
 
