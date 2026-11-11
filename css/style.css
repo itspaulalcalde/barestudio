@@ -71,6 +71,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 80px;
+    box-sizing: border-box;
 }
 
 .hero-title h1 {
@@ -78,27 +80,31 @@ body {
     font-weight: 500;
     letter-spacing: -5px;
     color: #111111;
+    transform: translateX(60px);
 }
 
 .hero-bottom {
     position: absolute;
     bottom: 40px;
-    width: 100%;
-    left: 0;
+    width: auto;
+    left: 80px;
+    right: 0;
     display: flex;
     justify-content: space-between;
-    align-items:end;
+    align-items: end;
 }
 
 .hero-button {
     grid-column: 2;
     justify-self: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 .hero-info {
     grid-column: 1;
     justify-self: start;
-    margin-left: 50px;
+    margin-left: 150px;
     text-align: left;
 }
 
@@ -770,6 +776,7 @@ body {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    transform: translateX(20px) scale(0.9);
 }
 
 .story-image {
@@ -821,12 +828,12 @@ body {
 /*OUR PHILOSOPHY*/
 
 .philosophy-section {
-    min-height: 100vh;
+    min-height: auto;
     width: 100%;
-    padding: 100px 4%;
+    padding: 72px 4% 200px 10%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     background-color: #ffffff;
     box-sizing: border-box;
 }
@@ -1113,6 +1120,8 @@ body {
     height: auto;
     object-fit: contain;
     display: block;
+    transform: translateX(20px);
+
 }
 
 
