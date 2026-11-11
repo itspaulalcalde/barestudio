@@ -200,7 +200,7 @@ body {
 
 .home-work {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     column-gap: 60px;
     row-gap: 110px;
     padding: 80px 40px 160px;
@@ -214,6 +214,7 @@ body {
     flex-direction: column;
     width: fit-content;
     margin: 0;
+    justify-self: start
 }
 
 /*Foto 1*/
@@ -224,7 +225,7 @@ body {
 }
 
 .home-work > div:nth-child(1) img {
-    width: 220px;
+    width: 250px;
 }
 
 /*Foto 2*/
@@ -265,8 +266,9 @@ body {
 /*Foto 5*/
 .home-work > div:nth-child(5) {
     grid-column: 1;
-    grid-row: 5;
+    grid-row: 3;
     justify-self: start;
+    margin-top: -50px;
 }
 
 .home-work > div:nth-child(5) img {
@@ -276,7 +278,7 @@ body {
 /*Foto 6*/
 .home-work > div:nth-child(6) {
     grid-column: 2;
-    grid-row: 6;
+    grid-row: 4;
     justify-self: start;
 }
 
@@ -287,30 +289,31 @@ body {
 /*Foto 7*/
 .home-work > div:nth-child(7) {
     grid-column: 1;
-    grid-row: 7;
+    grid-row: 4;
     justify-self: center;
-    margin-top: 343px;
+    margin-top: 500px;
 }
 
 .home-work > div:nth-child(7) img {
-    width: 300px;
+    width: 250px;
 }
 
 /*Foto 8*/
 .home-work > div:nth-child(8) {
-    grid-column: 2;
-    grid-row: 8;
+    grid-column: 4;
+    grid-row: 5;
     justify-self: start;
 }
 
 .home-work > div:nth-child(8) img {
     width: 220px;
+    margin-top: -80px;
 }
 
 /*Foto 9*/
 .home-work > div:nth-child(9) {
     grid-column: 1;
-    grid-row: 9;
+    grid-row: 7;
     justify-self: center;
     margin-top: 300px;
 }
@@ -322,7 +325,7 @@ body {
 /*Foto 10*/
 .home-work > div:nth-child(10) {
     grid-column: 2;
-    grid-row: 10;
+    grid-row: 8;
     justify-self: start;
 }
 
@@ -658,7 +661,7 @@ body {
 
 
 .about-title {
-    font-size: 24px;
+    font-size: 15px;
     font-weight: 400;
     color: #111111;
     text-align: right;
@@ -673,7 +676,6 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-end;
-    font-family: serif;
 }
 
 
@@ -704,8 +706,8 @@ body {
 
 
 .artist-image {
-    width: 220px;
-    height: 290px;
+    width: 250px;
+    height: 310px;
     margin-top: 55px;
 }
 
@@ -719,7 +721,7 @@ body {
 .artist-name {
     width: 100%;
     text-align: right;
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 300;
     margin-top: 15px;
 }
@@ -732,7 +734,7 @@ body {
 }
 
 .artist-info p {
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 300;
     color: #555555;
     margin-bottom: 22px;
@@ -803,14 +805,14 @@ body {
 }
 
 .story-content p {
-    font-size: 13px;
+    font-size: 15px;
     line-height: 1.5;
     font-weight: 400;
     margin: 0;
 }
 
 .story-footer {
-    font-size: 11px;
+    font-size: 13px;
     font-style: italic;
     margin-top: 25px;
     color: #777777;
@@ -837,12 +839,12 @@ body {
 .philosophy-subtitle {
     font-size: 11px;
     letter-spacing: 1px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     font-weight: 400;
 }
 
 .philosophy-header h2 {
-    font-size: 28px;
+    font-size: 25px;
     font-weight: 400;
     color: #111111;
     margin: 0;
@@ -853,7 +855,7 @@ body {
     max-width: 1240px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1.15fr 1fr 1.55fr;
+    grid-template-columns: 1fr 1.15fr 1fr 1.25fr;
     gap: 20px;
 }
 
@@ -883,12 +885,33 @@ body {
     white-space: nowrap;
 }
 
+.philosophy-grid {
+    max-width: 1080px;
+    gap: 16px;
+}
+
+.philosophy-card {
+    min-height: 88px;
+    padding: 16px 22px;
+}
+
+.philosophy-card h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.philosophy-card p {
+    font-size: 13px;
+    margin: 0;
+    white-space: normal;
+}
+
 
 /* BOOKING REQUEST */ 
 
 .booking-section {
     width: 100%;
-    padding: 60px 0;
+    padding: 90px 0 48px;
     background-color: #ffffff;
     box-sizing: border-box;
 }
@@ -896,36 +919,36 @@ body {
 /* MAIN CONTAINER */
 
 .booking-container {
-    width: 80%;
-    max-width: 1180px;
-    margin: 0 auto;
+    width: 64%;
+    max-width: 860px;
+    margin: 0 8% 0 auto;
     border: 1px solid #777777;
-    padding: 50px 60px;
+    padding: 32px clamp(24px, 3vw, 40px);
     box-sizing: border-box;
 }
 
 /* HEADER */
 
 .booking-header {
-    margin-bottom: 65px;
+    margin-bottom: 32px;
 }
 
 .booking-label {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     color: #777777;
     margin: 0 0 25px 0;
 }
 
 .booking-header h2 {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 400;
     color: #111111;
     margin: 0 0 12px 0;
 }
 
 .booking-description {
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 300;
     color: #333333;
     margin: 0;
@@ -940,9 +963,9 @@ body {
 
 .booking-row {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12%;
-    margin-bottom: 45px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    margin-bottom: 24px;
 }
 
 
@@ -991,14 +1014,14 @@ body {
 /* ARTIST OPTIONS */
 
 .booking-artist {
-    margin-bottom: 55px;
+    margin-bottom: 28px;
 }
 
 .artist-options {
     display: flex;
     flex-direction: column;
-    gap: 17px;
-    margin-top: 17px;
+    gap: 10px;
+    margin-top: 12px;
 }
 
 .artist-option {
@@ -1033,12 +1056,12 @@ body {
 .booking-button {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 0;
 }
 
 .booking-button button {
-    width: 165px;
-    height: 56px;
+    width: 145px;
+    height: 44px;
     border: none;
     border-radius: 0;
     background-color: #000000;
@@ -1054,11 +1077,13 @@ body {
     background-color: #444444;
 }
 
+.booking-field input,
+.booking-field select {
+    height: 44px;
+    padding: 0 14px;
+}
 
-
-/* ============================= */
-/* GOOD TO KNOW */
-/* ============================= */
+/*  GOOD TO KNOW */
 
 .goodtoknow-section {
     width: 100%;
@@ -1084,7 +1109,7 @@ body {
 
 .goodtoknow-image img {
     width: 100%;
-    max-width: 480px;
+    max-width: 500px;
     height: auto;
     object-fit: contain;
     display: block;
@@ -1102,18 +1127,18 @@ body {
 /* HEADER */
 
 .goodtoknow-header {
-    margin-bottom: 65px;
+    margin-bottom: 50px;
 }
 
 .goodtoknow-label {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     color: #777777;
-    margin: 0 0 24px 0;
+    margin: 0 0 10px 0;
 }
 
 .goodtoknow-header h2 {
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 400;
     color: #111111;
     margin: 0;
@@ -1123,7 +1148,7 @@ body {
 /* QUESTIONS */
 
 .goodtoknow-item {
-    margin-bottom: 48px;
+    margin-bottom: 40px;
 }
 
 .goodtoknow-item:last-child {
@@ -1131,7 +1156,7 @@ body {
 }
 
 .goodtoknow-item h3 {
-    font-size: 21px;
+    font-size: 18px;
     font-weight: 400;
     color: #111111;
     margin: 0 0 12px 0;
