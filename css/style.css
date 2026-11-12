@@ -221,6 +221,9 @@ body {
     grid-column: 1;
     grid-row: 1;
     justify-self: start;
+    font-style: italic;
+    font-family: serif;
+    color: #777;
 }
 
 .home-work > div:nth-child(1) img {
@@ -233,6 +236,9 @@ body {
     grid-row: 1;
     justify-self: center;
     margin-top: 343px;
+    font-style: italic;
+    font-family: serif;
+    color: #777;
 }
 
 .home-work > div:nth-child(2) img {
@@ -244,6 +250,9 @@ body {
     grid-column: 1;
     grid-row: 2;
     justify-self: start;
+    font-style: italic;
+    font-family: serif;
+    color: #777;
 }
 
 .home-work > div:nth-child(3) img {
@@ -256,6 +265,9 @@ body {
     grid-row: 2;
     justify-self: center;
     margin-top: 300px;
+    font-style: italic;
+    font-family: serif;
+    color: #777;
 }
 
 .home-work > div:nth-child(4) img {
@@ -265,8 +277,11 @@ body {
 /*Foto 5*/
 .home-work > div:nth-child(5) {
     grid-column: 1;
-    grid-row: 5;
+    grid-row: 3;
     justify-self: start;
+    font-style: italic;
+    font-family: serif;
+    color: #777;
 }
 
 .home-work > div:nth-child(5) img {
@@ -276,67 +291,24 @@ body {
 /*Foto 6*/
 .home-work > div:nth-child(6) {
     grid-column: 2;
-    grid-row: 6;
-    justify-self: start;
+    grid-row: 3;
+    justify-self: center;
+    margin-top: 300px;
+    font-style: italic;
+    font-family: serif;
+    color: #777;
 }
 
 .home-work > div:nth-child(6) img {
     width: 220px;
 }
 
-/*Foto 7*/
-.home-work > div:nth-child(7) {
-    grid-column: 1;
-    grid-row: 7;
-    justify-self: center;
-    margin-top: 343px;
-}
-
-.home-work > div:nth-child(7) img {
-    width: 300px;
-}
-
-/*Foto 8*/
-.home-work > div:nth-child(8) {
-    grid-column: 2;
-    grid-row: 8;
-    justify-self: start;
-}
-
-.home-work > div:nth-child(8) img {
-    width: 220px;
-}
-
-/*Foto 9*/
-.home-work > div:nth-child(9) {
-    grid-column: 1;
-    grid-row: 9;
-    justify-self: center;
-    margin-top: 300px;
-}
-
-.home-work > div:nth-child(9) img {
-    width: 220px;
-}
-
-/*Foto 10*/
-.home-work > div:nth-child(10) {
-    grid-column: 2;
-    grid-row: 10;
-    justify-self: start;
-}
-
-.home-work > div:nth-child(10) img {
-    width: 220px;
-}
-
-
 
 
 
 .home-work img {
     display: block;
-    width: 180px;
+    width: 400px;
     height: auto;
     object-fit: cover;
 }
@@ -446,6 +418,70 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: #252525;
 }
+
+
+
+/* GALLERY SECTION */
+
+/* GALLERY */
+
+.gallery-section {
+    width: 100%;
+}
+
+/* CATEGORIES */
+
+.gallery-categories {
+    display: flex;
+    gap: 35px;
+    margin-bottom: 45px;
+}
+
+.filter-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    font-family: inherit;
+    font-size: 14px;
+    color: #999;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    color: #111;
+}
+
+/* GALLERY GRID */
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    align-items: start;
+}
+
+.gallery-image {
+    width: 100%;
+    overflow: hidden;
+}
+
+.gallery-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+/* HIDE IMAGES */
+
+.gallery-image.hidden {
+    display: none;
+}
+
+
+
 /*MATERIALS & INKS /WORK*/
 
 .story-section {
@@ -1054,11 +1090,7 @@ body {
     background-color: #444444;
 }
 
-
-
-/* ============================= */
 /* GOOD TO KNOW */
-/* ============================= */
 
 .goodtoknow-section {
     width: 100%;

@@ -12,6 +12,7 @@
     <meta name="description" content="bare studio. Fine Line Tattoo studio in Copenhage.">
 
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
@@ -98,112 +99,47 @@
 
     <!-- SELECTED WORK -->
 
-    <section class="selected-work">
+    
+<!-- GALLERY SECTION -->
 
-        <a href="work.html">
-            SELECTED WORK
-            <span>↗</span>
-        </a>
+<section class="gallery-section">
 
-            
-    </section>
+    <div class="gallery-categories">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="hands">Hands</button>
+        <button class="filter-btn" data-filter="feet">Feet</button>
+        <button class="filter-btn" data-filter="neck">Neck</button>
+        <button class="filter-btn" data-filter="twofold">Twofold</button>
+        <button class="filter-btn" data-filter="other">Other</button>
+    </div>
 
-    <section class="home-work">
+    <div class="gallery-container">
 
-
-        <div>
-            <img src="gallery/nara .jpg" alt="">
-
-            <div class="home-project-info">
-                <h3>Nara</h3>
-                <h3>2025</h3>
-            </div>
+        <div class="gallery-image" data-category="hands">
+            <img src="gallery/hands 1 .jpeg" alt="Hand tattoo">
         </div>
 
-        <div>
-            <img src="gallery/hailey .jpg" alt="">
-
-            <div class="home-project-info">
-                <h3>Hailey</h3>
-                <h3>2026</h3>
-            </div>
+        <div class="gallery-image" data-category="feet">
+            <img src="gallery/feet.jpg" alt="Foot tattoo">
         </div>
 
-         <div>
-            <img src="gallery/back 1.jpg" alt="">
-
-            <div class="home-project-info">
-                <h3>Back</h3>
-                <h3>2023</h3>
-            </div>
+        <div class="gallery-image" data-category="neck">
+            <img src="gallery/neck.jpg" alt="Neck tattoo">
         </div>
 
-         <div>
-            <img src="gallery/horses.jpg" alt="">
-
-            <div class="home-project-info">
-                <h3>Horses</h3>
-                <h3>2022</h3>
-            </div>
+        <div class="gallery-image" data-category="twofold">
+            <img src="gallery/tattoo de dos.jpg" alt="Back tattoo">
         </div>
 
-         <div>
-            <img src="gallery/hand 2.jpg" alt="">
-
-            <div class="home-project-info">
-                <h3>Leia/Youtuber</h3>
-                <h3>2024</h3>
-            </div>
+        <div class="gallery-image" data-category="other">
+            <img src="gallery/shoulder.jpg" alt="Shoulder tattoo">
         </div>
 
-        <div>
-            <img src="gallery/wrist.jpg" alt="">
+    </div>
 
-            <div class="home-project-info">
-                <h3>Wrist Composition</h3>
-                <h3>2026</h3>
-            </div>
-        </div>
-
-         <div>
-            <img src="gallery/dragon.jpg" alt="">
-
-            <div class="home-project-info">
-                <h3>Dragon</h3>
-                <h3>2023</h3>
-            </div>
-        </div>
-
-         <div>
-            <img src="gallery/arm.jpg" alt="Arm">
-
-            <div class="home-project-info">
-                <h3>Sam Tattoos</h3>
-                <h3>2025</h3>
-            </div>
-        </div>
-
-        <div>
-            <img src="gallery/shoulder.jpg" alt="Arm">
-
-            <div class="home-project-info">
-                <h3>Shoulder tattoo</h3>
-                <h3>2026</h3>
-            </div>
-        </div>
-
-        <div>
-            <img src="gallery/back women.jpg" alt="Arm">
-
-            <div class="home-project-info">
-                <h3>Back Women</h3>
-                <h3>2023</h3>
-            </div>
-        </div>
+</section>
 
 
-
-    </section>
 
 
     <!-- FOOTER -->
@@ -260,7 +196,8 @@
     </footer>
 
  </main>
-
+ 
+ <script src="gallery.js"></script>
 </body>
 
 </html>
