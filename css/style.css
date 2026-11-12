@@ -286,11 +286,15 @@ body {
     grid-column: 1;
     grid-row: 3;
     justify-self: start;
+<<<<<<< HEAD
     font-style: italic;
     font-family: serif;
     color: #777;
     margin-top: -50px;
 
+=======
+    margin-top: -50px;
+>>>>>>> 0c43beacc882b9d3c737c6ca17c7801861a9eeff
 }
 
 .home-work > div:nth-child(5) img {
@@ -300,12 +304,16 @@ body {
 /*Foto 6*/
 .home-work > div:nth-child(6) {
     grid-column: 2;
+<<<<<<< HEAD
     grid-row: 3;
     justify-self: center;
     margin-top: 300px;
     font-style: italic;
     font-family: serif;
     color: #777;
+=======
+    grid-row: 4;
+>>>>>>> 0c43beacc882b9d3c737c6ca17c7801861a9eeff
     justify-self: start;
 }
 
@@ -1127,7 +1135,10 @@ body {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 0c43beacc882b9d3c737c6ca17c7801861a9eeff
 .booking-field input,
 .booking-field select {
     height: 44px;
@@ -1135,6 +1146,11 @@ body {
 }
 
 
+<<<<<<< HEAD
+=======
+
+/*  GOOD TO KNOW */
+>>>>>>> 0c43beacc882b9d3c737c6ca17c7801861a9eeff
 
 /*  GOOD TO KNOW */
 
