@@ -292,54 +292,6 @@ body {
     width: 220px;
 }
 
-/*Foto 7*/
-.home-work > div:nth-child(7) {
-    grid-column: 1;
-    grid-row: 4;
-    justify-self: center;
-    margin-top: 500px;
-}
-
-.home-work > div:nth-child(7) img {
-    width: 250px;
-}
-
-/*Foto 8*/
-.home-work > div:nth-child(8) {
-    grid-column: 4;
-    grid-row: 5;
-    justify-self: start;
-}
-
-.home-work > div:nth-child(8) img {
-    width: 220px;
-    margin-top: -80px;
-}
-
-/*Foto 9*/
-.home-work > div:nth-child(9) {
-    grid-column: 1;
-    grid-row: 7;
-    justify-self: center;
-    margin-top: 300px;
-}
-
-.home-work > div:nth-child(9) img {
-    width: 220px;
-}
-
-/*Foto 10*/
-.home-work > div:nth-child(10) {
-    grid-column: 2;
-    grid-row: 8;
-    justify-self: start;
-}
-
-.home-work > div:nth-child(10) img {
-    width: 220px;
-}
-
-
 
 
 
@@ -458,12 +410,11 @@ body {
 /*MATERIALS & INKS /WORK*/
 
 .story-section {
-    margin-left: 180px;
-    padding: 100px 40px 160px;
+    padding: 100px 40px 160px 300px;
 }
 
 .story-content {
-    margin-bottom: 60px;
+    margin-bottom: 5px;
 }
 
 .story-subtitle {
@@ -494,9 +445,10 @@ body {
     display: flex;
     flex-direction: column;
     gap: 15px;
-
-    width: 100%;
     max-width: 850px;
+    margin-left: 300px;
+    margin-right: 40px;
+    margin-bottom: 100px;
 }
 
 .acordeon__item {
@@ -662,6 +614,23 @@ body {
 }
 
 
+
+.materials-layout {
+    margin-left: 350px;
+    margin-right: 40px;
+    max-width: 850px;
+}
+
+
+.materials-layout .story-section {
+    margin-left: 0;
+    padding: 100px 0 32px;
+}
+
+.materials-layout .acordeon {
+    margin-left: 0;
+    margin-right: 0;
+}
 
 /*WHO ARE WE? /ABOUT*/
 
