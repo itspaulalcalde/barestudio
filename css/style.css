@@ -15,10 +15,10 @@ body {
 /*HEADER*/
 
 .header {
-    position: absolute;
+    position: fixed;
     z-index: 9999;
     top: 40px;
-    left: 50px;
+    left: 40px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -71,6 +71,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 80px;
+    box-sizing: border-box;
 }
 
 .hero-title h1 {
@@ -78,27 +80,31 @@ body {
     font-weight: 500;
     letter-spacing: -5px;
     color: #111111;
+    transform: translateX(60px);
 }
 
 .hero-bottom {
     position: absolute;
     bottom: 40px;
-    width: 100%;
-    left: 0;
+    width: auto;
+    left: 80px;
+    right: 0;
     display: flex;
     justify-content: space-between;
-    align-items:end;
+    align-items: end;
 }
 
 .hero-button {
     grid-column: 2;
     justify-self: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 .hero-info {
     grid-column: 1;
     justify-self: start;
-    margin-left: 50px;
+    margin-left: 150px;
     text-align: left;
 }
 
@@ -200,7 +206,7 @@ body {
 
 .home-work {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     column-gap: 60px;
     row-gap: 110px;
     padding: 80px 40px 160px;
@@ -214,6 +220,7 @@ body {
     flex-direction: column;
     width: fit-content;
     margin: 0;
+    justify-self: start
 }
 
 /*Foto 1*/
@@ -227,7 +234,7 @@ body {
 }
 
 .home-work > div:nth-child(1) img {
-    width: 220px;
+    width: 250px;
 }
 
 /*Foto 2*/
@@ -282,6 +289,8 @@ body {
     font-style: italic;
     font-family: serif;
     color: #777;
+    margin-top: -50px;
+
 }
 
 .home-work > div:nth-child(5) img {
@@ -297,6 +306,7 @@ body {
     font-style: italic;
     font-family: serif;
     color: #777;
+    justify-self: start;
 }
 
 .home-work > div:nth-child(6) img {
@@ -485,12 +495,11 @@ body {
 /*MATERIALS & INKS /WORK*/
 
 .story-section {
-    margin-left: 180px;
-    padding: 100px 40px 160px;
+    padding: 100px 40px 160px 300px;
 }
 
 .story-content {
-    margin-bottom: 60px;
+    margin-bottom: 5px;
 }
 
 .story-subtitle {
@@ -521,9 +530,10 @@ body {
     display: flex;
     flex-direction: column;
     gap: 15px;
-
-    width: 100%;
     max-width: 850px;
+    margin-left: 300px;
+    margin-right: 40px;
+    margin-bottom: 100px;
 }
 
 .acordeon__item {
@@ -690,11 +700,28 @@ body {
 
 
 
+.materials-layout {
+    margin-left: 350px;
+    margin-right: 40px;
+    max-width: 850px;
+}
+
+
+.materials-layout .story-section {
+    margin-left: 0;
+    padding: 100px 0 32px;
+}
+
+.materials-layout .acordeon {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 /*WHO ARE WE? /ABOUT*/
 
 
 .about-title {
-    font-size: 24px;
+    font-size: 15px;
     font-weight: 400;
     color: #111111;
     text-align: right;
@@ -709,7 +736,6 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-end;
-    font-family: serif;
 }
 
 
@@ -740,8 +766,8 @@ body {
 
 
 .artist-image {
-    width: 220px;
-    height: 290px;
+    width: 250px;
+    height: 310px;
     margin-top: 55px;
 }
 
@@ -755,7 +781,7 @@ body {
 .artist-name {
     width: 100%;
     text-align: right;
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 300;
     margin-top: 15px;
 }
@@ -768,7 +794,7 @@ body {
 }
 
 .artist-info p {
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 300;
     color: #555555;
     margin-bottom: 22px;
@@ -804,6 +830,7 @@ body {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    transform: translateX(20px) scale(0.9);
 }
 
 .story-image {
@@ -839,14 +866,14 @@ body {
 }
 
 .story-content p {
-    font-size: 13px;
+    font-size: 15px;
     line-height: 1.5;
     font-weight: 400;
     margin: 0;
 }
 
 .story-footer {
-    font-size: 11px;
+    font-size: 13px;
     font-style: italic;
     margin-top: 25px;
     color: #777777;
@@ -855,12 +882,12 @@ body {
 /*OUR PHILOSOPHY*/
 
 .philosophy-section {
-    min-height: 100vh;
+    min-height: auto;
     width: 100%;
-    padding: 100px 4%;
+    padding: 72px 4% 200px 10%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     background-color: #ffffff;
     box-sizing: border-box;
 }
@@ -873,12 +900,12 @@ body {
 .philosophy-subtitle {
     font-size: 11px;
     letter-spacing: 1px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     font-weight: 400;
 }
 
 .philosophy-header h2 {
-    font-size: 28px;
+    font-size: 25px;
     font-weight: 400;
     color: #111111;
     margin: 0;
@@ -889,7 +916,7 @@ body {
     max-width: 1240px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1.15fr 1fr 1.55fr;
+    grid-template-columns: 1fr 1.15fr 1fr 1.25fr;
     gap: 20px;
 }
 
@@ -919,56 +946,71 @@ body {
     white-space: nowrap;
 }
 
+.philosophy-grid {
+    max-width: 1080px;
+    gap: 16px;
+}
+
+.philosophy-card {
+    min-height: 88px;
+    padding: 16px 22px;
+}
+
+.philosophy-card h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.philosophy-card p {
+    font-size: 13px;
+    margin: 0;
+    white-space: normal;
+}
+
 
 /* BOOKING REQUEST */ 
 
 .booking-section {
     width: 100%;
-    padding: 60px 0;
+    padding: 90px 0 48px;
     background-color: #ffffff;
     box-sizing: border-box;
 }
 
-/* MAIN CONTAINER */
-
 .booking-container {
-    width: 80%;
-    max-width: 1180px;
-    margin: 0 auto;
+    width: 64%;
+    max-width: 860px;
+    margin: 0 8% 0 auto;
     border: 1px solid #777777;
-    padding: 50px 60px;
+    padding: 32px clamp(24px, 3vw, 40px);
     box-sizing: border-box;
 }
 
-/* HEADER */
-
 .booking-header {
-    margin-bottom: 65px;
+    margin-bottom: 32px;
 }
 
 .booking-label {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     color: #777777;
     margin: 0 0 25px 0;
 }
 
 .booking-header h2 {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 400;
     color: #111111;
     margin: 0 0 12px 0;
 }
 
 .booking-description {
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 300;
     color: #333333;
     margin: 0;
 }
 
-
-/* FORM LAYOUT */
 
 .booking-form {
     width: 100%;
@@ -976,13 +1018,11 @@ body {
 
 .booking-row {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12%;
-    margin-bottom: 45px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    margin-bottom: 24px;
 }
 
-
-/* INPUT FIELDS */
 
 .booking-field {
     display: flex;
@@ -1024,17 +1064,15 @@ body {
 }
 
 
-/* ARTIST OPTIONS */
-
 .booking-artist {
-    margin-bottom: 55px;
+    margin-bottom: 28px;
 }
 
 .artist-options {
     display: flex;
     flex-direction: column;
-    gap: 17px;
-    margin-top: 17px;
+    gap: 10px;
+    margin-top: 12px;
 }
 
 .artist-option {
@@ -1056,8 +1094,6 @@ body {
 }
 
 
-/* BOTTOM FIELDS */
-
 .booking-bottom {
     margin-bottom: 60px;
 }
@@ -1069,12 +1105,12 @@ body {
 .booking-button {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 0;
 }
 
 .booking-button button {
-    width: 165px;
-    height: 56px;
+    width: 145px;
+    height: 44px;
     border: none;
     border-radius: 0;
     background-color: #000000;
@@ -1090,8 +1126,19 @@ body {
     background-color: #444444;
 }
 
-/* GOOD TO KNOW */
+<<<<<<< HEAD
+=======
+.booking-field input,
+.booking-field select {
+    height: 44px;
+    padding: 0 14px;
+}
 
+
+
+/*  GOOD TO KNOW */
+
+>>>>>>> 0c43beacc882b9d3c737c6ca17c7801861a9eeff
 .goodtoknow-section {
     width: 100%;
     min-height: 100vh;
@@ -1116,10 +1163,12 @@ body {
 
 .goodtoknow-image img {
     width: 100%;
-    max-width: 480px;
+    max-width: 500px;
     height: auto;
     object-fit: contain;
     display: block;
+    transform: translateX(20px);
+
 }
 
 
@@ -1134,18 +1183,18 @@ body {
 /* HEADER */
 
 .goodtoknow-header {
-    margin-bottom: 65px;
+    margin-bottom: 50px;
 }
 
 .goodtoknow-label {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     color: #777777;
-    margin: 0 0 24px 0;
+    margin: 0 0 10px 0;
 }
 
 .goodtoknow-header h2 {
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 400;
     color: #111111;
     margin: 0;
@@ -1155,7 +1204,7 @@ body {
 /* QUESTIONS */
 
 .goodtoknow-item {
-    margin-bottom: 48px;
+    margin-bottom: 40px;
 }
 
 .goodtoknow-item:last-child {
@@ -1163,7 +1212,7 @@ body {
 }
 
 .goodtoknow-item h3 {
-    font-size: 21px;
+    font-size: 18px;
     font-weight: 400;
     color: #111111;
     margin: 0 0 12px 0;
@@ -1188,11 +1237,11 @@ body {
     color: #ffffff;
     width: 100%;
     margin-left: 0;
-    padding: 100px 60px 20px;
-    min-height: 450px;
+    padding: 80px 60px 20px;
+    min-height: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 
@@ -1211,13 +1260,13 @@ body {
 }
 
 .footer-address h4 {
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 600;
     margin-bottom: 20px;
 }
 
 .footer-address p {
-    font-size: 11px;
+    font-size: 13px;
     line-height: 1.4;
     margin-bottom: 12px;
 }
@@ -1233,7 +1282,7 @@ body {
 
 .footer-center h2 {
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 400;
     letter-spacing: -1px;
     margin: 0 0 20px;
 }
@@ -1264,7 +1313,7 @@ body {
 }
 
 .footer-contact h4 {
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 600;
     margin: 0 0 5px;
 }
@@ -1272,7 +1321,7 @@ body {
 .footer-contact a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 11px;
+    font-size: 14px;
 }
 
 .footer-contact a:hover {
@@ -1294,4 +1343,538 @@ body {
 .footer-bottom span {
     font-size: 10px;
     color: #ffffff;
+}
+
+
+
+/* MEDIA QUERIES */
+
+.header {
+    top: clamp(18px, 3vw, 40px);
+    left: clamp(18px, 3vw, 40px);
+}
+
+.studio-intro,
+.selected-work,
+.home-work,
+.gallery-section,
+.about-section {
+    margin-left: clamp(120px, 14vw, 180px);
+    padding-left: clamp(16px, 3vw, 40px);
+    padding-right: clamp(16px, 3vw, 40px);
+}
+
+/* Home */
+
+.hero {
+    padding-left: clamp(0px, 6vw, 80px);
+}
+
+.hero-title h1 {
+    font-size: clamp(40px, 9vw, 100px);
+    letter-spacing: -0.05em;
+    transform: translateX(clamp(0px, 4vw, 60px));
+}
+
+.hero-bottom {
+    left: clamp(16px, 6vw, 80px);
+    right: clamp(16px, 4vw, 50px);
+    gap: clamp(8px, 2vw, 24px);
+}
+
+.hero-info {
+    margin-left: clamp(0px, 10vw, 150px);
+}
+
+.hero-location {
+    margin-right: 0;
+}
+
+.hero-bottom a {
+    padding-inline: clamp(12px, 2vw, 28px);
+}
+
+.studio-intro {
+    gap: clamp(24px, 4vw, 50px);
+    padding-block: clamp(56px, 7vw, 80px) clamp(72px, 12vw, 160px);
+}
+
+.studio-image {
+    width: 60%;
+    max-width: 370px;
+}
+
+.studio-image img {
+    height: auto;
+    aspect-ratio: 370 / 520;
+}
+
+.home-work {
+    column-gap: clamp(16px, 4vw, 60px);
+    row-gap: clamp(28px, 8vw, 110px);
+    padding-block: clamp(32px, 6vw, 80px) clamp(60px, 12vw, 160px);
+}
+
+.home-work > div,
+.home-work img {
+    max-width: 100%;
+}
+
+.home-work > div:nth-child(2) {
+    margin-top: clamp(130px, 25vw, 343px);
+}
+
+.home-work > div:nth-child(4) {
+    margin-top: clamp(110px, 22vw, 300px);
+}
+
+/* Work */
+
+.gallery-section {
+    min-height: auto;
+    padding-block: clamp(56px, 8vw, 100px);
+}
+
+.gallery-categories {
+    flex-wrap: wrap;
+    gap: clamp(12px, 4vw, 55px);
+    margin-bottom: clamp(20px, 3vw, 40px);
+}
+
+.gallery-image {
+    height: auto;
+    aspect-ratio: 520 / 400;
+}
+
+.materials-layout {
+    margin-left: clamp(120px, 25vw, 350px);
+    margin-right: clamp(16px, 3vw, 40px);
+}
+
+.materials-layout .story-section {
+    display: block;
+    margin: 0;
+    padding: clamp(32px, 6vw, 100px) 0 24px;
+}
+
+.materials-layout .story-content {
+    padding: 0;
+}
+
+.acordeon__titulo {
+    gap: clamp(12px, 3vw, 35px);
+    padding-inline: clamp(14px, 2.5vw, 25px);
+}
+
+.acordeon__interior {
+    flex-wrap: wrap;
+    gap: clamp(16px, 4vw, 60px);
+}
+
+.acordeon__contenido img {
+    width: min(100%, 200px);
+    height: auto;
+    aspect-ratio: 200 / 260;
+}
+
+.acordeon__texto {
+    flex: 1 1 220px;
+}
+
+/* About */
+
+.about-section {
+    min-height: auto;
+}
+
+.artists-container {
+    width: 100%;
+    max-width: 675px;
+    gap: clamp(16px, 3vw, 35px);
+}
+
+.artist-card {
+    flex: 1;
+    min-width: 0;
+    min-height: clamp(450px, 52vw, 680px);
+    padding: clamp(14px, 2vw, 28px);
+}
+
+.artist-image {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    aspect-ratio: 250 / 310;
+    margin-top: clamp(24px, 4vw, 55px);
+}
+
+.artist-image img {
+    display: block;
+}
+
+.story-image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.story-section > .story-content {
+    padding-inline: clamp(16px, 3vw, 45px);
+}
+
+.philosophy-section {
+    padding-bottom: clamp(64px, 14vw, 200px);
+}
+
+.philosophy-card {
+    min-width: 0;
+    padding-inline: clamp(12px, 2vw, 22px);
+}
+
+.philosophy-card h3 {
+    white-space: normal;
+}
+
+/* Sessions & Footer */
+
+.booking-row,
+.footer-content {
+    gap: clamp(16px, 5vw, 24px);
+}
+
+.goodtoknow-section {
+    min-height: auto;
+    padding-block: clamp(48px, 8vw, 100px);
+    gap: clamp(24px, 7vw, 90px);
+}
+
+.footer {
+    padding: clamp(40px, 6vw, 80px) clamp(16px, 5vw, 60px) 20px;
+}
+
+.footer-content {
+    gap: clamp(20px, 7vw, 100px);
+}
+
+.footer-contact {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.footer-bottom {
+    gap: 16px;
+    margin-top: clamp(40px, 7vw, 100px);
+}
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+    .philosophy-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* PANTALLAS ESTRECHAS  */
+
+@media (max-width: 800px) {
+    .header {
+        position: sticky;
+        top: 0;
+        left: auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px 20px;
+        padding: 16px clamp(16px, 4vw, 32px);
+        background-color: #fff;
+    }
+
+    .navigation {
+        margin-top: 0;
+    }
+
+    .navigation ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: clamp(10px, 3vw, 24px);
+    }
+
+    .studio-intro,
+    .selected-work,
+    .home-work,
+    .gallery-section,
+    .about-section {
+        margin-left: 0;
+    }
+
+    .hero {
+        height: auto;
+        min-height: 70vh;
+        padding: 48px 16px 120px;
+    }
+
+    .hero-title h1 {
+        transform: none;
+    }
+
+    .hero-info {
+        margin-left: 0;
+    }
+
+    .hero-bottom {
+        bottom: 24px;
+    }
+
+    .home-work > div:nth-child(n) {
+        grid-column: auto;
+        grid-row: auto;
+        justify-self: start;
+        margin-top: 0;
+    }
+
+    .materials-layout {
+        margin-inline: clamp(16px, 4vw, 32px);
+    }
+
+    .booking-container {
+        width: 90%;
+        margin-inline: auto;
+    }
+
+    .philosophy-section {
+        padding-inline: clamp(16px, 4vw, 32px);
+    }
+}
+
+/* MÓVIL */
+
+@media (max-width: 560px) {
+    .studio-intro {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .studio-image {
+        width: 100%;
+    }
+
+    .studio-description {
+        width: 100%;
+        max-width: 370px;
+    }
+
+    .artists-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .artist-card {
+        width: 100%;
+        max-width: 320px;
+        min-height: auto;
+    }
+
+    .story-section,
+    .booking-row,
+    .goodtoknow-section {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .story-section {
+        gap: 24px;
+        margin-block: 40px;
+        padding-inline: 16px;
+    }
+
+    .story-section > .story-content {
+        padding-inline: 0;
+    }
+
+    .story-image-container,
+    .goodtoknow-image img {
+        height: auto;
+        transform: none;
+    }
+
+    .goodtoknow-image img {
+        max-width: 200px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-address,
+    .footer-contact {
+        text-align: center;
+    }
+
+    .footer-contact {
+        align-items: center;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero-bottom {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero-location {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .hero-button {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        justify-self: center;
+    }
+
+    .philosophy-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* MENÚ HAMBURGUESA */
+
+.menu-btn {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-btn span {
+    display: block;
+    width: 26px;
+    height: 3px;
+    background-color: #111111;
+    border-radius: 2px;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.menu-btn.abierto span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.menu-btn.abierto span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-btn.abierto span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+@media (max-width: 800px) {
+    .menu-btn {
+        display: flex;
+    }
+
+    .header .menu {
+        display: none;
+        width: 100%;
+    }
+
+    .header .menu ul {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .header .menu a {
+        display: block;
+        padding: 12px 0;
+        border-top: 1px solid #ddd;
+    }
+}
+
+@media (min-width: 801px) {
+    .header .menu {
+        display: block !important;
+    }
+}
+
+/*VENTANA MODAL*/
+.booking-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.72);
+}
+
+.booking-modal.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.booking-modal-panel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    max-width: 520px;
+    padding: 28px 42px;
+    border: 1px solid #777;
+    background: #fff;
+    color: #111;
+}
+
+.booking-modal-image {
+    width: clamp(80px, 15vw, 145px);
+    height: auto;
+    flex-shrink: 0;
+}
+
+.booking-modal-message {
+    flex: 1;
+    text-align: center;
+    font-family: "Comic Sans MS", cursive;
+    font-size: clamp(16px, 2.3vw, 22px);
+    line-height: 1.5;
+}
+
+.booking-modal-message h2 {
+    font: inherit;
+    font-size: 15px;
+    margin: 0;
+}
+
+.booking-modal-message p {
+    margin: 4px 0 0;
+    font-size: 15px;
+}
+
+.booking-modal-message span {
+    color: #888;
+}
+
+.booking-modal-close {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 36px;
+    height: 36px;
+    border: 0;
+    background: transparent;
+    color: #111;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    .booking-modal-panel {
+        flex-direction: column;
+        gap: 14px;
+        padding: 32px 20px 24px;
+    }
 }

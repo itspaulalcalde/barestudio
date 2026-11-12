@@ -5,7 +5,7 @@
 <head>
 
     <meta charset="UTF-8">
-    <meta name="viwport" content="widht=device-width, initial-scale=1.0">
+    <meta name="viewport" content="widht=device-width, initial-scale=1.0">
 
     <title>bare studio.</title>
 
@@ -15,16 +15,26 @@
 
 </head>
 
+
+
 <body>
-
-    <!-- HEADER / MENÚ -->
+    <!--HEADER / MENÚ-->
     <header class="header">
-
         <div class="logo">
             <a href="index.html">bare studio.</a>
         </div>
 
-        <nav class="navigation">
+        <button type="button"
+                class="menu-btn"
+                aria-label="Menu"
+                aria-controls="main-menu"
+                aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="navigation menu" id="main-menu">
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="work.html">WORK</a></li>
@@ -32,7 +42,6 @@
                 <li><a href="sessions.html">SESSIONS</a></li>
             </ul>
         </nav>
-
     </header>
 
     <main>
@@ -98,48 +107,87 @@
     </section>
 
     <!-- SELECTED WORK -->
+   
 
-    
-<!-- GALLERY SECTION -->
+<section class="home-work">
 
-<section class="gallery-section">
+    <!-- FOTO 1 -->
+    <div>
+        <img src="gallery/nara .jpg" alt="Leo tattoo">
 
-    <div class="gallery-categories">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="hands">Hands</button>
-        <button class="filter-btn" data-filter="feet">Feet</button>
-        <button class="filter-btn" data-filter="neck">Neck</button>
-        <button class="filter-btn" data-filter="twofold">Twofold</button>
-        <button class="filter-btn" data-filter="other">Other</button>
+        <div class="home-project-info">
+            <h3>Leo</h3>
+            <h3>2023</h3>
+        </div>
     </div>
 
-    <div class="gallery-container">
+    <!-- FOTO 2 -->
+    <div>
+        <img src="gallery/hailey .jpg" alt="Amber tattoo">
 
-        <div class="gallery-image" data-category="hands">
-            <img src="gallery/hands 1 .jpeg" alt="Hand tattoo">
+        <div class="home-project-info">
+            <h3>Amber</h3>
+            <h3>2022</h3>
         </div>
-
-        <div class="gallery-image" data-category="feet">
-            <img src="gallery/feet.jpg" alt="Foot tattoo">
-        </div>
-
-        <div class="gallery-image" data-category="neck">
-            <img src="gallery/neck.jpg" alt="Neck tattoo">
-        </div>
-
-        <div class="gallery-image" data-category="twofold">
-            <img src="gallery/tattoo de dos.jpg" alt="Back tattoo">
-        </div>
-
-        <div class="gallery-image" data-category="other">
-            <img src="gallery/shoulder.jpg" alt="Shoulder tattoo">
-        </div>
-
     </div>
 
+    <!-- FOTO 3 -->
+    <div>
+        <img src="gallery/back 1.jpg" alt="Laia tattoo">
+
+        <div class="home-project-info">
+            <h3>Laia</h3>
+            <h3>2024</h3>
+        </div>
+    </div>
+
+    <!-- FOTO 4 -->
+    <div>
+        <img src="gallery/horses.jpg" alt="Sam tattoo">
+
+        <div class="home-project-info">
+            <h3>Sam</h3>
+            <h3>2025</h3>
+        </div>
+    </div>
+
+<<<<<<< HEAD
+    <!-- FOTO 5 -->
+    <div>
+        <img src="gallery/hand 2.jpg" alt="Tattoo project">
+
+        <div class="home-project-info">
+            <h3>Project 05</h3>
+            <h3>2024</h3>
+=======
+         <div>
+            <img src="gallery/arm.jpg" alt="">
+
+            <div class="home-project-info">
+                <h3>Lucky</h3>
+                <h3>2024</h3>
+            </div>
+>>>>>>> 0c43beacc882b9d3c737c6ca17c7801861a9eeff
+        </div>
+    </div>
+
+    <!-- FOTO 6 -->
+    <div>
+        <img src="gallery/arm.jpg" alt="Tattoo project">
+
+        <div class="home-project-info">
+            <h3>Project 06</h3>
+            <h3>2025</h3>
+        </div>
+    </div>
+
+<<<<<<< HEAD
 </section>
 
 
+=======
+    </section>
+>>>>>>> 0c43beacc882b9d3c737c6ca17c7801861a9eeff
 
 
     <!-- FOOTER -->
@@ -196,8 +244,15 @@
     </footer>
 
  </main>
+<<<<<<< HEAD
  
  <script src="gallery.js"></script>
+=======
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+
+>>>>>>> 0c43beacc882b9d3c737c6ca17c7801861a9eeff
 </body>
 
 </html>

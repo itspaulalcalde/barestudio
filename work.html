@@ -5,7 +5,7 @@
 <head>
 
     <meta charset="UTF-8">
-    <meta name="viwport" content="widht=device-width, initial-scale=1.0">
+    <meta name="viewport" content="widht=device-width, initial-scale=1.0">
 
     <title>bare studio.</title>
 
@@ -16,14 +16,24 @@
 </head>
 
 <body>
-
+    
     <!--HEADER / MENÚ-->
     <header class="header">
         <div class="logo">
             <a href="index.html">bare studio.</a>
         </div>
-    
-        <nav class="navigation">
+
+        <button type="button"
+                class="menu-btn"
+                aria-label="Menu"
+                aria-controls="main-menu"
+                aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="navigation menu" id="main-menu">
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="work.html">WORK</a></li>
@@ -31,8 +41,6 @@
                 <li><a href="sessions.html">SESSIONS</a></li>
             </ul>
         </nav>
-
-
     </header>
 
     <!-- GALLERY SECTION -->
@@ -40,25 +48,32 @@
 <section class="gallery-section">
 
     <div class="gallery-categories">
+<<<<<<< HEAD
         <a href="#" class="active">Hands</a>
         <a href="#" class="active">Feet</a>
         <a href="#" class="active">Neck</a>
         <a href="#" class="active">Twofold</a>
         <a href="#" class="active">Other</a>
+=======
+        <a href="#" data-filter="hands" class="active" aria-current="true">Hands</a>
+        <a href="#" data-filter="feet">Feet</a>
+        <a href="#" data-filter="neck">Neck</a>
+        <a href="#" data-filter="other">Other</a>
+>>>>>>> 0c43beacc882b9d3c737c6ca17c7801861a9eeff
     </div>
 
     <div class="gallery-container">
 
-        <div class="gallery-image">
+        <div class="gallery-image" data-category="hands">
             <img src="gallery/hands 1 .jpeg" alt="Hand tattoo">
         </div>
 
-        <div class="gallery-image">
-            <img src="gallery/feet.jpg" alt="Hand tattoo">
+        <div class="gallery-image" data-category="feet" hidden>
+            <img src="gallery/feet.jpg" alt="Foot tattoo">
         </div>
 
-        <div class="gallery-image">
-            <img src="gallery/neck.jpg" alt="Hand tattoo">
+        <div class="gallery-image" data-category="neck" hidden>
+            <img src="gallery/neck.jpg" alt="Neck tattoo">
         </div>
 
          <div class="gallery-image">
@@ -76,63 +91,66 @@
 
 
 <!-- MATERIALS & INKS -->
+<div class="materials-layout">
 
-<section class="story-section">
+    <section class="story-section">
 
-    <div class="story-content">
+        <div class="story-content">
 
-        <span class="story-subtitle">
-            01 / MATERIALS
-        </span>
+            <span class="story-subtitle">
+                01 / MATERIALS
+            </span>
 
-        <h2>Materials & Inks</h2>
+            <h2>Materials & Inks</h2>
 
-        <p>
-            A selection of high-quality, skin-friendly
-            and thoughtfully sourced materials.
-        </p>
+            <p>
+                A selection of high-quality, skin-friendly
+                and thoughtfully sourced materials.
+            </p>
 
-    </div>
-</section>
+        </div>
+    </section>
 
-   
-    <!-- ACORDEÓN -->
+    
+        <!-- ACORDEÓN -->
 
-    <section class="acordeon" id="materials">
+        <section class="acordeon" id="materials">
 
-        <!-- 01 TATTOO INK -->
+            <!-- 01 TATTOO INK -->
 
-        <div class="acordeon__item">
+            <div class="acordeon__item">
 
-            <button type="button"
-                    class="acordeon__titulo"
-                    aria-expanded="false">
+                <button type="button"
+                        class="acordeon__titulo"
+                        aria-expanded="false">
 
-                <span class="acordeon__numero">01</span>
-                <span>TATTOO INK</span>
+                    <span class="acordeon__numero">01</span>
+                    <span>TATTOO INK</span>
 
-            </button>
+                </button>
 
-            <div class="acordeon__contenido">
+                <div class="acordeon__contenido">
 
-                <div class="acordeon__interior">
+                    <div class="acordeon__interior">
 
-                    <img src="gallery/tattoo ink.jpg"
-                        alt="Tattoo ink bottles">
+                        <img src="gallery/tattoo ink.jpg"
+                            alt="Tattoo ink bottles">
 
-                    <div class="acordeon__texto">
+                        <div class="acordeon__texto">
 
-                        <p>
-                            We use high-quality, vegan and
-                            cruelty-free inks, carefully selected
-                            for their safety and performance.
-                        </p>
+                            <p>
+                                We use high-quality, vegan and
+                                cruelty-free inks, carefully selected
+                                for their safety and performance.
+                            </p>
 
-                        <p>
-                            Our inks are chosen to create
-                            precise, long-lasting results
-                            while respecting your skin.
-                        </p>
+                            <p>
+                                Our inks are chosen to create
+                                precise, long-lasting results
+                                while respecting your skin.
+                            </p>
+
+                        </div>
 
                     </div>
 
@@ -140,88 +158,44 @@
 
             </div>
 
-        </div>
 
+            <!-- 02 NEEDLES -->
 
-        <!-- 02 NEEDLES -->
+            <div class="acordeon__item">
 
-        <div class="acordeon__item">
+                <button type="button"
+                        class="acordeon__titulo"
+                        aria-expanded="false">
 
-            <button type="button"
-                    class="acordeon__titulo"
-                    aria-expanded="false">
+                    <span class="acordeon__numero">02</span>
+                    <span>NEEDLES</span>
 
-                <span class="acordeon__numero">02</span>
-                <span>NEEDLES</span>
+                </button>
 
-            </button>
+                <div class="acordeon__contenido">
 
-            <div class="acordeon__contenido">
+                    <div class="acordeon__interior">
 
-                <div class="acordeon__interior">
+                        <img src="gallery/needles.jpg"
+                            alt="Tattoo needles">
 
-                    <img src="gallery/needles.jpg"
-                        alt="Tattoo needles">
+                        <div class="acordeon__texto">
 
-                    <div class="acordeon__texto">
+                            <p>
+                                We use high-quality, sterile
+                                and single-use needles, carefully
+                                selected to ensure precision,
+                                comfort and safety throughout
+                                every tattoo session.
+                            </p>
 
-                        <p>
-                            We use high-quality, sterile
-                            and single-use needles, carefully
-                            selected to ensure precision,
-                            comfort and safety throughout
-                            every tattoo session.
-                        </p>
+                            <p>
+                                Our fine needles allow us to
+                                create delicate lines and
+                                detailed designs.
+                            </p>
 
-                        <p>
-                            Our fine needles allow us to
-                            create delicate lines and
-                            detailed designs.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- 03 TATTOO STENCILS -->
-
-        <div class="acordeon__item">
-
-            <button type="button"
-                    class="acordeon__titulo"
-                    aria-expanded="false">
-
-                <span class="acordeon__numero">03</span>
-                <span>TATTOO STENCILS</span>
-
-            </button>
-
-            <div class="acordeon__contenido">
-
-                <div class="acordeon__interior">
-
-                    <img src="gallery/tattoo stencils.jpg"
-                        alt="Tattoo stencil designs">
-
-                    <div class="acordeon__texto">
-
-                        <p>
-                            Every design begins with a precise
-                            and carefully prepared stencil.
-                        </p>
-
-                        <p>
-                            We use skin-friendly transfer
-                            papers that ensure clean,
-                            detailed outlines and accurate
-                            placement, helping us achieve
-                            the best possible result.
-                        </p>
+                        </div>
 
                     </div>
 
@@ -229,44 +203,43 @@
 
             </div>
 
-        </div>
 
+            <!-- 03 TATTOO STENCILS -->
 
-        <!-- 04 AFTERCARE TATTOO -->
+            <div class="acordeon__item">
 
-        <div class="acordeon__item">
+                <button type="button"
+                        class="acordeon__titulo"
+                        aria-expanded="false">
 
-            <button type="button"
-                    class="acordeon__titulo"
-                    aria-expanded="false">
+                    <span class="acordeon__numero">03</span>
+                    <span>TATTOO STENCILS</span>
 
-                <span class="acordeon__numero">04</span>
-                <span>AFTERCARE TATTOO</span>
+                </button>
 
-            </button>
-        </div>
+                <div class="acordeon__contenido">
 
-            <div class="acordeon__contenido">
+                    <div class="acordeon__interior">
 
-                <div class="acordeon__interior">
+                        <img src="gallery/tattoo stencils.jpg"
+                            alt="Tattoo stencil designs">
 
-                    <img src="gallery/aftercare tattoo.jpg"
-                        alt="Tattoo aftercare products">
+                        <div class="acordeon__texto">
 
-                    <div class="acordeon__texto">
+                            <p>
+                                Every design begins with a precise
+                                and carefully prepared stencil.
+                            </p>
 
-                        <p>
-                            Taking care of your tattoo
-                            is an essential part of
-                            the process.
-                        </p>
+                            <p>
+                                We use skin-friendly transfer
+                                papers that ensure clean,
+                                detailed outlines and accurate
+                                placement, helping us achieve
+                                the best possible result.
+                            </p>
 
-                        <p>
-                            We provide personalized
-                            aftercare guidance and recommend
-                            gentle products to help your
-                            tattoo heal properly.
-                        </p>
+                        </div>
 
                     </div>
 
@@ -274,9 +247,53 @@
 
             </div>
 
+
+            <!-- 04 AFTERCARE TATTOO -->
+
+            <div class="acordeon__item">
+
+                <button type="button"
+                        class="acordeon__titulo"
+                        aria-expanded="false">
+
+                    <span class="acordeon__numero">04</span>
+                    <span>AFTERCARE TATTOO</span>
+
+                </button>
+            
+
+                <div class="acordeon__contenido">
+
+                    <div class="acordeon__interior">
+
+                        <img src="gallery/aftercare tattoo.jpg"
+                            alt="Tattoo aftercare products">
+
+                        <div class="acordeon__texto">
+
+                            <p>
+                                Taking care of your tattoo
+                                is an essential part of
+                                the process.
+                            </p>
+
+                            <p>
+                                We provide personalized
+                                aftercare guidance and recommend
+                                gentle products to help your
+                                tattoo heal properly.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
             <div class="matirials-card"></div>
-</section>
+    </section>
 
+</div>
 
 
 <!-- FOOTER -->
