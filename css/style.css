@@ -286,15 +286,10 @@ body {
     grid-column: 1;
     grid-row: 3;
     justify-self: start;
-<<<<<<< HEAD
     font-style: italic;
     font-family: serif;
     color: #777;
     margin-top: -50px;
-
-=======
-    margin-top: -50px;
->>>>>>> 0c43beacc882b9d3c737c6ca17c7801861a9eeff
 }
 
 .home-work > div:nth-child(5) img {
@@ -304,17 +299,13 @@ body {
 /*Foto 6*/
 .home-work > div:nth-child(6) {
     grid-column: 2;
-<<<<<<< HEAD
+
     grid-row: 3;
     justify-self: center;
     margin-top: 300px;
     font-style: italic;
     font-family: serif;
     color: #777;
-=======
-    grid-row: 4;
->>>>>>> 0c43beacc882b9d3c737c6ca17c7801861a9eeff
-    justify-self: start;
 }
 
 .home-work > div:nth-child(6) img {
@@ -346,157 +337,62 @@ body {
 
 
 
-
-/*GALLERY /WORK*/
-
-.gallery-section {
-    margin-left: 180px;
-    min-height: 100vh;
-    padding: 100px 40px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-.gallery-categories {
-    display: flex;
-    justify-content: center;
-    gap: 55px;
-    margin-bottom: 40px;
-}
-
-.gallery-categories a {
-    text-decoration: none;
-    color: #777777;
-    font-size: 13px;
-    font-weight: 400;
-    padding-bottom: 5px;
-}
-
-.gallery-categories a:hover,
-.gallery-categories a.active {
-    color: #111111;
-    border-bottom: 1px solid #111111;
-}
-
-
-
-.gallery-container {
-    width: 520px;
-    max-width: 100%;
-}
-
-.gallery-image {
-    width: 100%;
-    height: 400px;
-}
-
-.gallery-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-
-
-.gallery-controls {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 12px;
-}
-
-.gallery-arrow {
-    width: 40px;
-    height: 20px;
-    border: 1px solid #999999;
-    background: transparent;
-    color: #555555;
-    font-size: 14px;
-    cursor: pointer;
-}
-
-.gallery-arrow:hover {
-    background-color: #111111;
-    color: white;
-}
-
-.gallery-counter {
-    font-size: 10px;
-    color: #777777;
-}
-
-.materials-links {
-    width: 100%;
-    max-width: 750px;
-    margin: 0 auto;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #252525;
-}
-
-
-
-/* GALLERY SECTION */
-
 /* GALLERY */
 
-.gallery-section {
-    width: 100%;
+.gallery {
+    padding: 60px 40px;
 }
 
 /* CATEGORIES */
 
 .gallery-categories {
     display: flex;
-    gap: 35px;
-    margin-bottom: 45px;
+    justify-content: center;
+    gap: 55px;
+    margin-bottom: 55px;
 }
 
-.filter-btn {
+.gallery-categories button {
     background: none;
     border: none;
-    padding: 0;
-    font-family: inherit;
-    font-size: 14px;
-    color: #999;
+    font-size: 16px;
+    color: #777;
     cursor: pointer;
-    transition: color 0.3s ease;
 }
 
-.filter-btn:hover,
-.filter-btn.active {
+.gallery-categories button.active {
     color: #111;
+    border-bottom: 1px solid #111;
+    padding-bottom: 5px;
 }
 
-/* GALLERY GRID */
+/* IMAGE AND ARROWS */
 
-.gallery-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.gallery-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 25px;
-    align-items: start;
 }
 
-.gallery-image {
-    width: 100%;
-    overflow: hidden;
-}
-
-.gallery-image img {
-    width: 100%;
-    height: 400px;
+.gallery-content img {
+    width: 400px;
+    height: 380px;
     object-fit: cover;
-    display: block;
+    border-radius: 30px;
 }
 
-/* HIDE IMAGES */
+/* ARROWS */
 
-.gallery-image.hidden {
-    display: none;
+.gallery-arrow {
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
 }
+
+
+
 
 
 
@@ -724,6 +620,126 @@ body {
     margin-left: 0;
     margin-right: 0;
 }
+
+
+/* OUR STUDIO */
+
+.studio-section {
+    padding: 60px 8% 60px 16%;
+    background-color: white;
+    color: #111;
+}
+
+
+/* CABECERA */
+
+.studio-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 9px;
+    color: #777;
+    margin-bottom: 15px;
+    letter-spacing: 0.3px;
+}
+
+.studio-header p {
+    margin: 0;
+}
+
+.studio-main-title {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+}
+
+
+/* BLOQUES */
+
+.studio-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 100px;
+}
+
+
+/* IMÁGENES */
+
+.studio-image {
+    width: 32%;
+}
+
+.studio-image img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* TEXTOS */
+
+.studio-text {
+    width: 45%;
+}
+
+.studio-label {
+    font-size: 9px;
+    color: #777;
+    margin-bottom: 18px;
+}
+
+.studio-text h3 {
+    font-size: 17px;
+    font-weight: 400;
+    margin: 0 0 12px 0;
+}
+
+.studio-text p:last-child {
+    font-size: 10px;
+    line-height: 1.5;
+    color: #666;
+    max-width: 310px;
+    margin: 0;
+}
+
+
+/* BLOQUE 1 */
+
+.block-one {
+    margin-left: 0;
+    margin-top: 75px;
+}
+
+
+/* BLOQUE 2 */
+
+.block-two {
+    flex-direction: row-reverse;
+    width: 80%;
+    margin-left: auto;
+    margin-top: 150px;
+}
+
+.block-two .studio-text {
+    text-align: right;
+}
+
+.block-two .studio-text p:last-child {
+    margin-left: auto;
+}
+
+
+/* BLOQUE 3 */
+
+.block-three {
+    margin-top: 150px;
+    margin-left: -15px;
+}
+
+
+
 
 /*WHO ARE WE? /ABOUT*/
 
@@ -1134,11 +1150,6 @@ body {
     background-color: #444444;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 0c43beacc882b9d3c737c6ca17c7801861a9eeff
 .booking-field input,
 .booking-field select {
     height: 44px;
@@ -1146,15 +1157,9 @@ body {
 }
 
 
-<<<<<<< HEAD
-=======
-
-/*  GOOD TO KNOW */
->>>>>>> 0c43beacc882b9d3c737c6ca17c7801861a9eeff
-
 /*  GOOD TO KNOW */
 
->>>>>>> 0c43beacc882b9d3c737c6ca17c7801861a9eeff
+
 .goodtoknow-section {
     width: 100%;
     min-height: 100vh;
@@ -1730,6 +1735,97 @@ body {
     .footer-contact {
         align-items: center;
     }
+        /* OUR STUDIO */
+
+    .studio-section {
+        padding: 40px 6%;
+    }
+
+    .studio-header {
+        font-size: 8px;
+        gap: 15px;
+    }
+
+    .studio-main-title {
+        font-size: 17px;
+    }
+
+    /* BLOQUES */
+
+    .studio-block {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+        margin: 65px 0;
+        align-items: flex-start;
+    }
+
+    /* IMÁGENES */
+
+    .studio-block .studio-image {
+        width: 80%;
+    }
+
+    .studio-block .studio-image img {
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
+    }
+
+    /* TEXTOS */
+
+    .studio-text {
+        width: 85%;
+        text-align: left;
+    }
+
+    .studio-label {
+        font-size: 9px;
+        margin-bottom: 12px;
+    }
+
+    .studio-text h3 {
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+
+    .studio-text p:last-child {
+        font-size: 11px;
+        line-height: 1.5;
+        max-width: 100%;
+    }
+
+    /* BLOQUE 1 */
+
+    .block-one {
+        align-items: flex-start;
+    }
+
+    /* BLOQUE 2 */
+
+    .block-two {
+        align-items: flex-end;
+        flex-direction: column;
+    }
+
+    .block-two .studio-image {
+        align-self: flex-end;
+    }
+
+    .block-two .studio-text {
+        text-align: right;
+    }
+
+    .block-two .studio-text p:last-child {
+        margin-left: auto;
+    }
+
+    /* BLOQUE 3 */
+
+    .block-three {
+        align-items: flex-start;
+    }
 }
 
 @media (max-width: 400px) {
@@ -1751,6 +1847,28 @@ body {
 
     .philosophy-grid {
         grid-template-columns: 1fr;
+    }
+
+        /* OUR STUDIO */
+
+    .studio-header {
+        font-size: 7px;
+    }
+
+    .studio-main-title {
+        font-size: 16px;
+    }
+
+    .studio-block .studio-image {
+        width: 90%;
+    }
+
+    .studio-block .studio-image img {
+        height: 230px;
+    }
+
+    .studio-text {
+        width: 90%;
     }
 }
 
@@ -1807,6 +1925,29 @@ body {
         display: block;
         padding: 12px 0;
         border-top: 1px solid #ddd;
+    }
+
+        /* OUR STUDIO */
+
+    .studio-section {
+        margin-left: 0;
+        padding: 50px 6%;
+    }
+
+    .studio-block {
+        width: 90%;
+    }
+
+    .studio-image {
+        width: 38%;
+    }
+
+    .studio-image img {
+        height: 240px;
+    }
+
+    .studio-text {
+        width: 48%;
     }
 }
 

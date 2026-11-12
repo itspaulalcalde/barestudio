@@ -15,6 +15,64 @@ $(".acordeon__titulo").on("click", function() {
 });
 
 
+
+// CURRENT IMAGE
+
+let number = 1;
+let category = "hands";
+
+
+// CHANGE CATEGORY
+
+function changeCategory(name) {
+
+    category = name;
+    number = 1;
+
+    document.getElementById("photo").src =
+    "images/" + category + "-" + number + ".jpg";
+
+
+    // REMOVE ACTIVE
+
+    document.getElementById("hands").className = "";
+    document.getElementById("feet").className = "";
+    document.getElementById("neck").className = "";
+    document.getElementById("other").className = "";
+
+
+    // ADD ACTIVE
+
+    document.getElementById(category).className = "active";
+
+}
+
+
+// CHANGE IMAGE
+
+function changeImage(direction) {
+
+    number = number + direction;
+
+
+    if (number > 4) {
+        number = 1;
+    }
+
+    if (number < 1) {
+        number = 4;
+    }
+
+
+    document.getElementById("photo").src =
+    "images/" + category + "-" + number + ".jpg";
+
+}
+
+
+
+
+
 // Galeria (Work)
 $(".gallery-categories a").on("click", function (event) {
     event.preventDefault();
