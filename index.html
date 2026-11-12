@@ -5,7 +5,7 @@
 <head>
 
     <meta charset="UTF-8">
-    <meta name="viwport" content="widht=device-width, initial-scale=1.0">
+    <meta name="viewport" content="widht=device-width, initial-scale=1.0">
 
     <title>bare studio.</title>
 
@@ -14,16 +14,26 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
+
+
 <body>
-
-    <!-- HEADER / MENÚ -->
+    <!--HEADER / MENÚ-->
     <header class="header">
-
         <div class="logo">
             <a href="index.html">bare studio.</a>
         </div>
 
-        <nav class="navigation">
+        <button type="button"
+                class="menu-btn"
+                aria-label="Menu"
+                aria-controls="main-menu"
+                aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="navigation menu" id="main-menu">
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="work.html">WORK</a></li>
@@ -31,7 +41,6 @@
                 <li><a href="sessions.html">SESSIONS</a></li>
             </ul>
         </nav>
-
     </header>
 
     <main>
@@ -222,6 +231,9 @@
     </footer>
 
  </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 

@@ -5,7 +5,7 @@
 <head>
 
     <meta charset="UTF-8">
-    <meta name="viwport" content="widht=device-width, initial-scale=1.0">
+    <meta name="viewport" content="widht=device-width, initial-scale=1.0">
 
     <title>bare studio.</title>
 
@@ -21,8 +21,18 @@
         <div class="logo">
             <a href="index.html">bare studio.</a>
         </div>
-    
-        <nav class="navigation">
+
+        <button type="button"
+                class="menu-btn"
+                aria-label="Menu"
+                aria-controls="main-menu"
+                aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="navigation menu" id="main-menu">
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="work.html">WORK</a></li>
@@ -30,8 +40,6 @@
                 <li><a href="sessions.html">SESSIONS</a></li>
             </ul>
         </nav>
-
-
     </header>
 
 <!-- BOOKING REQUEST -->
@@ -53,7 +61,7 @@
 
 
 <!-- FORM -->
-        <form class="booking-form">
+        <form class="booking-form" id="bookingForm">
 
     <!-- NAME AND EMAIL -->
         <div class="booking-row">
@@ -155,6 +163,26 @@
     </div>
 
 </section>
+
+<div class="booking-modal" id="bookingModal"
+    role="dialog" aria-modal="true" aria-labelledby="bookingModalTitle">
+
+    <div class="booking-modal-panel">
+
+        <button type="button" class="booking-modal-close"
+                id="bookingModalClose" aria-label="Close">×</button>
+
+        <img class="booking-modal-image"
+             src="gallery/booking-illustration.png" alt="">
+
+        <div class="booking-modal-message">
+            <h2 id="bookingModalTitle">Thank you for booking with us.</h2>
+            <p>See you soon! <span aria-hidden="true">♥</span></p>
+        </div>
+
+    </div>
+
+</div>
 
 
 <!-- GOOD TO KNOW -->
@@ -292,9 +320,9 @@
 </footer>
 
 
-
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
-
 
 </html>
