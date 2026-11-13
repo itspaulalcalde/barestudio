@@ -158,7 +158,6 @@ body {
     gap: 50px;
 }
 
-
 .studio-image {
     width: 370px;
     flex-shrink: 0;
@@ -186,7 +185,9 @@ body {
 }
 
 
-/*SELECTED WORK /HOME*/
+
+/*Galleria home /HOME*/
+
 .selected-work {
     margin-left: 180px;
     padding: 40px;
@@ -212,8 +213,6 @@ body {
     padding: 80px 40px 160px;
     margin-left: 180px;
 }
-
-
 
 .home-work > div {
     display: flex;
@@ -313,8 +312,6 @@ body {
 }
 
 
-
-
 .home-work img {
     display: block;
     width: 400px;
@@ -337,59 +334,116 @@ body {
 
 
 
-/* GALLERY */
+/* GALLERY  WORK */
 
-.gallery {
-    padding: 60px 40px;
+
+/* GALLERY SECTION */
+
+.gallery-section {
+    width: 100%;
+    padding: 100px 40px 80px;
+    box-sizing: border-box;
 }
+
 
 /* CATEGORIES */
 
 .gallery-categories {
     display: flex;
     justify-content: center;
-    gap: 55px;
-    margin-bottom: 55px;
+    align-items: center;
+    gap: 85px;
+
+    margin-bottom: 110px;
 }
 
-.gallery-categories button {
+.category {
     background: none;
     border: none;
-    font-size: 16px;
+    padding: 0 0 7px;
+
+    font-family: inherit;
+    font-size: 22px;
+    font-weight: 400;
+
     color: #777;
     cursor: pointer;
+
+    border-bottom: 1px solid transparent;
+    transition: color 0.3s ease;
 }
 
-.gallery-categories button.active {
+.category:hover {
+    color: #111;
+}
+
+.category.active {
     color: #111;
     border-bottom: 1px solid #111;
-    padding-bottom: 5px;
 }
 
-/* IMAGE AND ARROWS */
 
-.gallery-content {
+/* MAIN IMAGE */
+
+.gallery-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 25px;
 }
 
-.gallery-content img {
-    width: 400px;
-    height: 380px;
+.gallery-container img {
+    width: 575px;
+    height: 545px;
+
     object-fit: cover;
-    border-radius: 30px;
+    object-position: center;
+
+    border-radius: 48px;
+
+    display: block;
+
+    transition: opacity 0.3s ease;
 }
 
-/* ARROWS */
+
+/* NAVIGATION */
+
+.gallery-navigation {
+    width: 80%;
+    max-width: 1200px;
+
+    margin: 75px auto 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .gallery-arrow {
-    background: none;
-    border: none;
-    font-size: 22px;
+    width: 64px;
+    height: 33px;
+
+    background: transparent;
+    border: 1px solid #555;
+
+    color: #111;
+    font-size: 12px;
+
     cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: background 0.3s ease,
+                color 0.3s ease;
 }
+
+.gallery-arrow:hover {
+    background: #111;
+    color: white;
+}
+
 
 
 
@@ -412,6 +466,7 @@ body {
     font-weight: 400;
     letter-spacing: 0.5px;
     margin-bottom: 18px;
+    color: #777;
 }
 
 .story-content h2 {
@@ -636,8 +691,8 @@ body {
 .studio-header {
     display: flex;
     justify-content: space-between;
-    font-size: 9px;
-    color: #777;
+    font-size: 11px;
+    color:#777;
     margin-bottom: 15px;
     letter-spacing: 0.3px;
 }
@@ -647,7 +702,7 @@ body {
 }
 
 .studio-main-title {
-    font-size: 18px;
+    font-size: 28px;
     font-weight: 400;
     margin: 0;
 }
@@ -685,19 +740,19 @@ body {
 }
 
 .studio-label {
-    font-size: 9px;
+    font-size: 12px;
     color: #777;
     margin-bottom: 18px;
 }
 
 .studio-text h3 {
-    font-size: 17px;
+    font-size: 25px;
     font-weight: 400;
     margin: 0 0 12px 0;
 }
 
 .studio-text p:last-child {
-    font-size: 10px;
+    font-size: 12px;
     line-height: 1.5;
     color: #666;
     max-width: 310px;
@@ -880,6 +935,7 @@ body {
     letter-spacing: 1px;
     margin-bottom: 20px;
     font-weight: 400;
+    color: #777;
 }
 
 
@@ -926,6 +982,7 @@ body {
     letter-spacing: 1px;
     margin-bottom: 50px;
     font-weight: 400;
+    color: #777;
 }
 
 .philosophy-header h2 {
@@ -1742,12 +1799,12 @@ body {
     }
 
     .studio-header {
-        font-size: 8px;
+        font-size: 11px;
         gap: 15px;
     }
 
     .studio-main-title {
-        font-size: 17px;
+        font-size: 25px;
     }
 
     /* BLOQUES */
@@ -1852,7 +1909,7 @@ body {
         /* OUR STUDIO */
 
     .studio-header {
-        font-size: 7px;
+        font-size: 11px;
     }
 
     .studio-main-title {
@@ -1860,7 +1917,7 @@ body {
     }
 
     .studio-block .studio-image {
-        width: 90%;
+        width: 95%;
     }
 
     .studio-block .studio-image img {
