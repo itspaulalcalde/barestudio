@@ -676,6 +676,25 @@ body {
     margin-right: 0;
 }
 
+/* HOVER MATERIALS */
+
+.acordeon__item {
+    transition: all 0.3s ease;
+}
+
+.acordeon__item:hover {
+    border-color: #d9a0aa;
+    background-color: #fff8f9;
+}
+
+.acordeon__item:hover .acordeon__titulo {
+    color: #d9a0aa;
+}
+
+.acordeon__item:hover .acordeon__titulo::after {
+    color: #d9a0aa;
+}
+
 
 /* OUR STUDIO */
 
@@ -1048,6 +1067,21 @@ body {
     white-space: normal;
 }
 
+/* HOVER PHILOSOPHY */
+
+.philosophy-card {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.philosophy-card:hover {
+    border-color: #d9a0aa;
+    background-color: #fff8f9;
+}
+
+.philosophy-card:hover h3 {
+    color: #d9a0aa;
+}
 
 /* BOOKING REQUEST */ 
 
