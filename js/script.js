@@ -16,22 +16,101 @@ $(".acordeon__titulo").on("click", function() {
 
 
 
-// Galeria (Work)
-$(".gallery-categories a").on("click", function (event) {
-    event.preventDefault();
 
-    var categoria = $(this).attr("data-filter");
-    var contenido = $('.gallery-container [data-category="' + categoria + '"]');
+/* SLIDESHOW WORK */
 
-    $(".gallery-container [data-category]").stop(true, true).hide();
-    contenido.show();
+// Variables
 
-    $(".gallery-categories a").removeClass("active").removeAttr("aria-current");
-    $(this).addClass("active").attr("aria-current", "true");
+var slides = $(".gallery-container .slide");
+var botonNext = $("#siguiente");
+var botonPrev = $("#anterior");
+
+var categoriaActual = "hands";
+var slidesCategoria = $(".gallery-container .hands");
+
+var total = slidesCategoria.length;
+var actual = 0;
+
+
+// Foto
+
+function mostrar(indiceSlide) {
+
+    slidesCategoria.eq(actual).fadeOut();
+
+    actual = indiceSlide;
+
+    slidesCategoria.eq(actual).fadeIn();
+
+    $("#contador").text((actual + 1) + " / " + total);
+}
+
+
+// Siguiente
+
+function siguiente() {
+
+    var n = actual + 1;
+
+    if (n === total) {
+        n = 0;
+    }
+
+    mostrar(n);
+}
+
+
+// Anterior
+
+function anterior() {
+
+    var n = actual - 1;
+
+    if (n < 0) {
+        n = total - 1;
+    }
+
+    mostrar(n);
+}
+
+
+// Botones
+
+botonNext.on("click", function() {
+    siguiente();
+});
+
+botonPrev.on("click", function() {
+    anterior();
 });
 
 
-// PHILOSOPHY ANIMATION
+// Cambiar Categoría
+
+$(".gallery-categories .category").on("click", function() {
+
+    $(".gallery-categories .category").removeClass("active");
+
+    $(this).addClass("active");
+
+    categoriaActual = $(this).attr("data-category");
+
+    slides.hide();
+
+    slidesCategoria = $(".gallery-container ." + categoriaActual);
+
+    total = slidesCategoria.length;
+    actual = 0;
+
+    slidesCategoria.eq(actual).fadeIn();
+
+    $("#contador").text((actual + 1) + " / " + total);
+
+});
+
+
+
+// OUR PHILOSOPHY 
 
 var animationStarted = false;
 
@@ -63,7 +142,7 @@ $(window).on("scroll", function() {
 
 
 
-// Menú
+// MENÚ
 $(".menu-btn").on("click", function () {
     $(".menu").slideToggle();
     $(this).toggleClass("abierto");
@@ -72,7 +151,7 @@ $(".menu-btn").on("click", function () {
 
 
 
-// Ventana Modal
+// VENTANA MODAL
 var bookingForm = document.getElementById("bookingForm");
 var bookingModal = document.getElementById("bookingModal");
 var bookingModalClose = document.getElementById("bookingModalClose");
