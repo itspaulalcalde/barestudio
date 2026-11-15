@@ -739,9 +739,6 @@ body {
     margin-top: 100px;
 }
 
-
-/* IMÁGENES */
-
 .studio-image {
     width: 32%;
 }
@@ -752,9 +749,6 @@ body {
     object-fit: cover;
     display: block;
 }
-
-
-/* TEXTOS */
 
 .studio-text {
     width: 45%;
@@ -982,35 +976,40 @@ body {
 
 /*OUR PHILOSOPHY*/
 
-.philosophy-section {
-    min-height: auto;
-    width: 100%;
-    padding: 72px 4% 200px 10%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    background-color: #ffffff;
-    box-sizing: border-box;
+.philosophy-wrapper {
+    height: 120vh;
+    position: relative;
 }
 
-.philosophy-header {
-    text-align: center;
-    margin-bottom: 60px;
+.philosophy-section {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    z-index: 2;
 }
 
 .philosophy-subtitle {
     font-size: 11px;
     letter-spacing: 1px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     font-weight: 400;
     color: #777;
 }
 
+.philosophy-header {
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+
 .philosophy-header h2 {
-    font-size: 25px;
+    font-size: 26px;
     font-weight: 400;
     color: #111111;
-    margin: 0;
+    margin: 0 0 15px 0;
 }
 
 .philosophy-grid {
@@ -1240,7 +1239,7 @@ body {
 }
 
 .booking-button button:hover {
-    background-color: #444444;
+    background-color:#d9a0aa;
 }
 
 .booking-field input,
@@ -2216,9 +2215,11 @@ body {
 .booking-modal-message {
     flex: 1;
     text-align: center;
-    font-family: "Comic Sans MS", cursive;
+    font-family: Arial, Helvetica, sans-serif;
+     font-style: italic;
     font-size: clamp(16px, 2.3vw, 22px);
     line-height: 1.5;
+    color: #444444;
 }
 
 .booking-modal-message h2 {
@@ -2248,6 +2249,7 @@ body {
     font-size: 22px;
     cursor: pointer;
 }
+
 
 @media (max-width: 480px) {
     .booking-modal-panel {
