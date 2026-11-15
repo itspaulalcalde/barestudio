@@ -2258,3 +2258,110 @@ body {
         padding: 32px 20px 24px;
     }
 }
+
+
+/* RESPONSIVE PHILOSOPHY  Anoimacion con JQ*/
+
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+
+    .philosophy-section {
+        padding: 70px 5% 60px;
+        min-height: 100vh;
+    }
+
+    .philosophy-header {
+        margin-bottom: 75px;
+    }
+
+    .philosophy-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 700px;
+        gap: 20px;
+    }
+
+    .philosophy-card {
+        min-height: 110px;
+        padding: 20px;
+        margin-top: 0;
+    }
+
+    .philosophy-card h3 {
+        font-size: 18px;
+        white-space: normal;
+    }
+
+    .philosophy-card p {
+        font-size: 13px;
+        white-space: normal;
+    }
+
+    .philosophy-wrapper {
+        height: 125vh;
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .philosophy-section {
+        padding: 100px 22px 50px;
+        min-height: 100vh;
+        justify-content: flex-start;
+    }
+
+    .philosophy-header {
+        margin-bottom: 55px;
+    }
+
+    .philosophy-subtitle {
+        font-size: 10px;
+    }
+
+    .philosophy-header h2 {
+        font-size: 23px;
+    }
+
+    .philosophy-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .philosophy-card {
+        width: 100%;
+        min-height: 90px;
+        padding: 18px 22px;
+        margin-top: 0;
+    }
+
+    .philosophy-card h3 {
+        font-size: 17px;
+    }
+
+    .philosophy-card p {
+        font-size: 12px;
+    }
+
+    .philosophy-wrapper {
+        height: 110vh;
+    }
+
+}
+
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .philosophy-card {
+        animation: none;
+    }
+
+}

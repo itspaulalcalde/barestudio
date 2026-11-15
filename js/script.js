@@ -109,17 +109,14 @@ $(".gallery-categories .category").on("click", function() {
 });
 
 
-
-// OUR PHILOSOPHY 
+// PHILOSOPHY ANIMATION
 
 var animationStarted = false;
 
 $(window).on("scroll", function() {
 
     var section = $(".philosophy-section");
-
     var sectionTop = section.offset().top;
-
     var scrollPosition = $(window).scrollTop() + $(window).height();
 
     if (scrollPosition > sectionTop + 100 && animationStarted == false) {
@@ -128,9 +125,15 @@ $(window).on("scroll", function() {
 
         $(".philosophy-card").each(function(index) {
 
+            var movement = 80;
+
+            if ($(window).width() <= 600) {
+                movement = 0;
+            }
+
             $(this).delay(index * 500).animate({
 
-                marginTop: (index * 80) + "px"
+                marginTop: (index * movement) + "px"
 
             }, 1500);
 
@@ -139,7 +142,6 @@ $(window).on("scroll", function() {
     }
 
 });
-
 
 
 // MENÚ
